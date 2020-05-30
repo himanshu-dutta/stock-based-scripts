@@ -1,0 +1,13 @@
+1. To adjust filters, look for the list of filters with the comment
+    and make modifications, as follows:
+    duration : can be upto past 5 years
+    then_ factor: % of previous value
+    drop : if true, it will check if present value is lower than past.
+2. Types of marks are {open,close,high,low,volume}
+3. for every filter, first mark is for present value, and second mark is for past value.
+4. Options for agg are: {'max','min','avg'}
+5. For notification, in the filters list, you can turn the option, notify = True or False.
+6. For LiveMonitor, you can turn notify_all = True, so that you get notified only if all intraday filters are true,
+    else, you get notifications for all filters.
+
+7. For Compare filter, don't use agg option and date option at same time. It will give error.
